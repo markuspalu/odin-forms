@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #fbf5f5;
+}
+
+.main-container {
+    display: flex;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.2);
+    width: 40%;
+    height: 110px;
+    z-index: 1;
+    padding: 7px 0px;
+    margin-top: 105px;
+}
+
+.left-section > img {
+    width: 85px;
+}
+
+.left-section > p {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 22px;
+    color: rgb(51, 126, 200);
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.leftimg {
+    position: absolute;
+    height: auto;
+    width: 40%;
+}
+
+
+
+
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.headerinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.firsttext, .secondtext, .thirdtext {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 20px;
+}
+
+.firsttext {
+    padding: 100px 50px 0px 50px;
+}
+
+.secondtext {
+    padding: 10px 50px;
+}
+
+.thirdtext {
+    padding: 20px 50px 10px 50px;
+}
+
+.inputcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.realinputs {
+    display: flex;
+    padding: 10px 50px;
+    gap: 70px;
+}
+
+.firstinput, .secondinput {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerinfo {
+    padding: 10px 50px;
+}
+
+input {
+  width: 200px;
+  height: 22px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 100%;
+  appearance: none;
+  box-shadow: inset 1px 1px 3px #ccc;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+input:focus {
+    background-color: #f3f3f3;
+    box-shadow: inset 1px 1px 3px rgb(51, 126, 200);;
+}
+
+label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-transform:uppercase;
+    margin-top: 15px;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+button {
+    background-color: rgb(51, 126, 200);
+    border-radius: 10px;
+    border-width: 1px;
+    margin-top: 15px;
+    padding: 8px 20px;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(111, 154, 198);
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(51, 126, 200);
+}
+
+#error::after {
+    position: absolute;
+    display: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color: red;
+    content: "* Passwords do not match";
+}
+
+#error.show::after {
+    display: block;
+}
